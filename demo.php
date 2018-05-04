@@ -3,13 +3,13 @@
  * 常见操作演示
  */
 
-include_once($_SERVER['DOCUMENT_ROOT']."/frame/init.php");
+include_once("init.php");
 
 
-$model = M('pdo_yy');
+$model = M('players');
 
 /*单条查询*/
-//$result = $model->where('id = 3')->find('a1');
+$result = $model->where('id = 3')->find();
 
 /*多条查询*/
 //$result = $model->where('id > 3')->findAll('a1,a2', false);

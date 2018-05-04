@@ -260,6 +260,21 @@ if (!function_exists('allow_visit')) {
     }
 }
 
+if(!function_exists('vp')){
+    function vp($d, $t='v', $e=true){
+        echo '<pre>';
+        if($t=='v'){
+            var_dump($d);
+        }elseif($t=='p'){
+            print_r($d);
+        }else{
+            echo $d;
+        }
+        echo '<pre>';
+        if($e)exit();
+    }
+}
+
 
 
 

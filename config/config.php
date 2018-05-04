@@ -23,13 +23,13 @@ return array(
     ),
 
     //异常时是否邮件通知
-    'EMAIL_NOTICE' => true,
+    'EMAIL_NOTICE' => false,
 
     //异常时是否微信通知
-    'WEIXIN_NOTICE' => true,
+    'WEIXIN_NOTICE' => false,
 
     //禁止访问ip,支持通配符
-//    'FORBID_IP' => array('223.72.90.34', '223.72.68.*'),
+    'FORBID_IP' => array(/*'223.72.90.34', '223.72.68.*'*/),
 
 
 );

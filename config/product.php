@@ -10,10 +10,10 @@ return array(
     //当部署方式为集中式时是数据库配置，部署方式为主从服务器时是主库配置
     'MASTER' => array(
         'DB_TYPE' => 'mysql',
-        'DB_HOST' => 'rm-2ze4b2qv8pd8qvn2n.mysql.rds.aliyuncs.com',
-        'DB_NAME' => 'juzi',
-        'DB_USER' => 'juzi',
-        'DB_PWD' => 'J6zifenq12&c0m86',
+        'DB_HOST' => '127.0.0.1',
+        'DB_NAME' => 'tx_qhero',
+        'DB_USER' => 'root',
+        'DB_PWD' => '',
         'DB_PREFIX' => '',
         'DB_PORT' => '3306',
         'DB_CHARSET' => 'UTF8',

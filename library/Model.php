@@ -34,7 +34,7 @@ class Model {
             $tablePrefix = $this->dbprefix;
         }
         //完整表名
-        $this->tableName = $tablePrefix.$tableName;
+        $this->tableName = '`'.$tablePrefix.$tableName.'`';
 
         $this->masterDB = $this->masterConnect();
         if(C('DB_DEPLOY_TYPE')){
@@ -675,7 +675,8 @@ class Model {
         foreach($this->option as $k => $v){
             if(is_array($v)){
                 foreach($v as $k1 => $v1){
-                    $options[$k1] .= ' '.$v1;
+                    //$options[$k1] .= ' '.$v1;
+                    $options[] .= ' '.$v1;
                 }
             }else{
                 $options[$k] = $v;
