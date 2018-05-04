@@ -675,8 +675,9 @@ class Model {
         foreach($this->option as $k => $v){
             if(is_array($v)){
                 foreach($v as $k1 => $v1){
-                    //$options[$k1] .= ' '.$v1;
-                    $options[] .= ' '.$v1;
+                    error_reporting($k1);
+                    $options[$k1] .= ' '.$v1;
+                    //$options[] .= ' '.$v1;
                 }
             }else{
                 $options[$k] = $v;
